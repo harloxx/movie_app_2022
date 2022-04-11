@@ -26,13 +26,13 @@ class App extends Component {
   render() {
     const { isLoading, movies } = this.state;
     return (
-      <section className="container">
+      <section className="container" basename="/movie_app_2022">
         {isLoading ? (
           <div className="loader">
             <span>Loading...</span>
           </div>
         ) : (
-          <div className="movies">
+          <div className="movies" basename="/movie_app_2022">
             {movies.map((data) => {
               console.log(data);
               return (
